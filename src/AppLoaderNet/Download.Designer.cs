@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Download));
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -57,6 +58,7 @@
             this.ClientSize = new System.Drawing.Size(524, 211);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.progressBar1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(340, 150);
             this.Name = "Download";
             this.Text = "AppLoader";
