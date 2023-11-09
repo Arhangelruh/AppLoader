@@ -1,6 +1,6 @@
 ﻿namespace AppLoaderNet
 {
-    partial class Form1
+    partial class Download
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -50,7 +50,7 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "Идет загрузка файлов...";
             // 
-            // Form1
+            // Download
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -58,8 +58,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.progressBar1);
             this.MinimumSize = new System.Drawing.Size(340, 150);
-            this.Name = "Form1";
+            this.Name = "Download";
             this.Text = "AppLoader";
+            this.Load += new System.EventHandler(this.Download_Load);
+            this.Shown += new System.EventHandler(this.Download_Shown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

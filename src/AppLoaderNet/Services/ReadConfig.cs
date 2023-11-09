@@ -8,7 +8,7 @@ namespace AppLoaderNet.Services
     {
         public Property readFile()
         {
-            string jsonString = File.ReadAllText("AppLoader.json");
+            string jsonString = File.ReadAllText("AppLoaderNet.json");
             var configs = JsonConvert.DeserializeObject<Property>(jsonString);
             return configs;
         }
